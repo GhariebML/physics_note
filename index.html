@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة المراجعة التفاعلية - فيزياء 12</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <header>
+        <div class="controls">
+            <button id="themeToggle" class="control-btn">🌙 الوضع الليلي</button>
+            <button id="printBtn" class="control-btn">🖨️ طباعة المذكرة</button>
+        </div>
+        <h1>منصة المراجعة التفاعلية (فيزياء)</h1>
+        <p>الصف الثاني عشر - المسار التكنولوجي - الفصل الدراسي الثاني 2025-2026</p>
+        <div class="author">إعداد: Dr. Mohamed Gharieb</div>
+    </header>
+
+    <div class="tabs-container">
+        <!-- Search Bar -->
+        <div class="search-container" style="margin-bottom: 15px; display: flex; justify-content: center;">
+            <input type="text" id="searchInput" placeholder="🔍 ابحث عن قانون، سؤال، أو مفهوم..." style="width: 100%; max-width: 600px; padding: 12px 20px; font-size: 1.1rem; border-radius: 50px; border: 2px solid var(--primary); outline: none; background: var(--bg-card); color: var(--text-main); box-shadow: var(--glass-shadow); transition: 0.3s;">
+        </div>
+        <div class="tabs">
+            <button class="tab-btn active" data-target="unit3">⚡ الوحدة 3</button>
+            <button class="tab-btn" data-target="unit4">💧 الوحدة 4</button>
+            <button class="tab-btn" data-target="unit5">🔥 الوحدة 5</button>
+            <button class="tab-btn" data-target="unit6">⚛️ الوحدة 6</button>
+            <button class="tab-btn" data-target="flashcards">🃏 بطاقات القوانين</button>
+            <button class="tab-btn" data-target="library">📚 المكتبة والمذكرات</button>
+            <button class="tab-btn" data-target="exam_night">🚨 ليلة الامتحان</button>
+            <button class="tab-btn" data-target="mock_exam">📝 اختبر نفسك</button>
+            <button class="tab-btn" data-target="tips">🎯 نصائح الاختبار</button>
+        </div>
+    </div>
+
+    <div class="content-area">
+        
+        <!-- DYNAMIC FULL CONTENT START -->
+<div id="unit3" class="tab-pane active">
+<div class="timer-container">
+  <div>
+    <h3 style="color:var(--danger)">⏱️ مؤقت الاختبار</h3>
+    <p style="color:var(--text-muted); font-size:0.9rem">درّب نفسك على سرعة الحل</p>
+  </div>
+  <div class="timer-display" id="timer3">00:00</div>
+  <div class="timer-controls">
+    <button class="timer-btn start-btn" data-timer="timer3">▶ ابدأ</button>
+    <button class="timer-btn pause-btn" data-timer="timer3">⏸ توقف</button>
+    <button class="timer-btn reset-btn" data-timer="timer3">🔄 إعادة</button>
+  </div>
+</div>
+<div class="card">
+<h2>⚡ الوحدة الثالثة: الكهرباء الساكنة</h2>
+<h3 class="lesson-title">الدرس 3-1: الشحنة الكهربائية وقانون كولوم</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">الشحنة الكهربائية هي خاصية أساسية للمادة، وتوجد نوعان: شحنة موجبة (+) وشحنة سالبة (−)</li>
+<li class="concept-main">الشحنات المتشابهة تتنافر، والشحنات المختلفة تتجاذب</li>
+<li class="concept-main">وحدة قياس الشحنة الكهربائية هي الكولوم (C)</li>
+<li class="concept-main">شحنة الإلكترون = شحنة البروتون = e = 1.6 × 10⁻¹⁹ C</li>
+<li class="concept-main">الشحنة مكممة: q = n × e حيث n عدد صحيح</li>
+<li class="concept-main">قانون حفظ الشحنة: الشحنة الكلية في نظام معزول تبقى ثابتة</li>
+<li class="concept-main">طرق الشحن:</li>
+<li class="concept-sub">الشحن بالاحتكاك: انتقال الإلكترونات بين جسمين عند فركهما</li>
+<li class="concept-sub">الشحن بالتوصيل (اللمس): انتقال الشحنة عند تلامس جسم مشحون مع جسم متعادل</li>
+<li class="concept-sub">الشحن بالحث (التأثير): إعادة توزيع الشحنات بسبب قرب جسم مشحون</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>قانون كولوم</h3>
+  <div class="formula">F = k × (|q₁ × q₂|) / r²</div>
+  <p>F: القوة (N) | q₁, q₂: الشحنتان (C) | r: المسافة (m) | k = 9 × 10⁹ N·m²/C²</p>
+</div>
+<div class="law-box">
+  <h3>ثابت كولوم</h3>
+  <div class="formula">k = 1 / (4π ε₀)</div>
+  <p>ε₀ = 8.85 × 10⁻¹² C²/(N·m²) سماحية الفراغ</p>
+</div>
+<div class="law-box">
+  <h3>تكميم الشحنة</h3>
+  <div class="formula">q = n × e</div>
+  <p>n: عدد الإلكترونات | e = 1.6 × 10⁻¹⁹ C</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> قانون كولوم يطبق فقط على الشحنات النقطية أو الأجسام الكروية المتجانسة</div>
+<div class="tip-box"><strong>💡 نصيحة:</strong> عند وجود أكثر من شحنتين، نستخدم مبدأ التراكب: القوة المحصلة = المجموع الاتجاهي للقوى</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">شحنتان نقطيتان q₁ = 3 μC و q₂ = −5 μC تفصل بينهما مسافة 20 cm. احسب مقدار القوة الكهربائية بينهما.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 المعطيات: q₁ = 3×10⁻⁶ C , q₂ = −5×10⁻⁶ C , r = 0.2 m</div><div class='step-item'>🔹 F = 9×10⁹ × |3×10⁻⁶ × 5×10⁻⁶| / (0.2)²</div><div class='step-item'>🔹 F = 9×10⁹ × 15×10⁻¹² / 0.04</div></div>
+    <div class="final-answer">✅ F = 3.375 N (قوة تجاذب لأن الشحنتين مختلفتان في الإشارة)</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">إذا تضاعفت المسافة بين شحنتين إلى الضعف، ماذا يحدث للقوة الكهربائية؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 F ∝ 1/r²</div><div class='step-item'>🔹 عند r' = 2r → F' = F / 4</div></div>
+    <div class="final-answer">✅ القوة تصبح ربع قيمتها الأصلية</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">ثلاث شحنات: q₁ = 2 μC, q₂ = −3 μC, q₃ = 4 μC على خط مستقيم. المسافة بين q₁ و q₂ = 10 cm والمسافة بين q₂ و q₃ = 15 cm. احسب القوة المحصلة على q₂.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 F₁₂ = 9×10⁹ × |2×10⁻⁶ × 3×10⁻⁶| / (0.1)² = 5.4 N نحو q₁</div><div class='step-item'>🔹 F₂₃ = 9×10⁹ × |3×10⁻⁶ × 4×10⁻⁶| / (0.15)² = 4.8 N نحو q₃</div><div class='step-item'>🔹 القوتان في اتجاهين متعاكسين</div></div>
+    <div class="final-answer">✅ F_net = 5.4 − 4.8 = 0.6 N في اتجاه q₁</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> شحنتان متماثلتان q = 4 μC تبعدان 30 cm. احسب القوة المتبادلة.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: F = 1.6 N (تنافر)</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> ما المسافة لتكون القوة بين شحنتين كل منهما 1 μC تساوي 0.1 N؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: r = 0.3 m = 30 cm</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> جسم يحمل شحنة −6.4 × 10⁻¹⁹ C. كم إلكتروناً فائضاً يحمله؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: n = 4 إلكترونات</div>
+</div>
+<hr class="section-sep">
+<h3 class="lesson-title">الدرس 3-2: المجال الكهربائي</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">المجال الكهربائي: منطقة من الفضاء تؤثر فيها قوة كهربائية على أي شحنة اختبار موضوعة فيها</li>
+<li class="concept-main">شدة المجال الكهربائي (E): القوة المؤثرة على وحدة الشحنات الموجبة عند نقطة ما</li>
+<li class="concept-main">المجال الكهربائي كمية متجهة: له مقدار واتجاه</li>
+<li class="concept-main">اتجاه المجال: من الشحنة الموجبة (بعيداً عنها) ونحو الشحنة السالبة</li>
+<li class="concept-main">خطوط المجال الكهربائي:</li>
+<li class="concept-sub">تخرج من الشحنة الموجبة وتدخل في الشحنة السالبة</li>
+<li class="concept-sub">لا تتقاطع أبداً</li>
+<li class="concept-sub">كثافتها تدل على شدة المجال</li>
+<li class="concept-main">المجال الكهربائي المنتظم: ثابت المقدار والاتجاه بين لوحين متوازيين مشحونين</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>شدة المجال الكهربائي</h3>
+  <div class="formula">E = F / q</div>
+  <p>E: شدة المجال (N/C) | F: القوة (N) | q: شحنة الاختبار (C)</p>
+</div>
+<div class="law-box">
+  <h3>المجال لشحنة نقطية</h3>
+  <div class="formula">E = k × |Q| / r²</div>
+  <p>Q: الشحنة المولدة للمجال (C) | r: البعد عن الشحنة (m)</p>
+</div>
+<div class="law-box">
+  <h3>المجال المنتظم بين لوحين</h3>
+  <div class="formula">E = V / d</div>
+  <p>V: فرق الجهد بين اللوحين (V) | d: المسافة بين اللوحين (m)</p>
+</div>
+<div class="law-box">
+  <h3>القوة الكهربائية في مجال منتظم</h3>
+  <div class="formula">F = q × E</div>
+  <p>F: القوة (N) | q: الشحنة (C) | E: شدة المجال (N/C)</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> في المجال المنتظم: الشحنة الموجبة تتحرك في اتجاه المجال، والشحنة السالبة تتحرك عكس المجال</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">احسب شدة المجال الكهربائي عند نقطة تبعد 0.5 m عن شحنة نقطية مقدارها 2 μC.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 E = 9×10⁹ × 2×10⁻⁶ / (0.5)²</div><div class='step-item'>🔹 E = 18000 / 0.25</div></div>
+    <div class="final-answer">✅ E = 72000 N/C = 7.2 × 10⁴ N/C</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">فرق الجهد بين لوحين يبعدان 2 cm هو 200 V. احسب: (أ) شدة المجال (ب) القوة على إلكترون.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 (أ) E = V/d = 200/0.02 = 10000 V/m</div><div class='step-item'>🔹 (ب) F = q×E = 1.6×10⁻¹⁹ × 10000</div></div>
+    <div class="final-answer">✅ (أ) E = 10⁴ V/m | (ب) F = 1.6 × 10⁻¹⁵ N</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">شحنتان: q₁ = +4 μC عند A و q₂ = −4 μC عند B. المسافة AB = 20 cm. احسب المجال عند نقطة المنتصف.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 r = 0.1 m</div><div class='step-item'>🔹 E₁ = k×q₁/r² = 3.6×10⁶ N/C بعيداً عن q₁</div><div class='step-item'>🔹 E₂ = k×|q₂|/r² = 3.6×10⁶ N/C نحو q₂</div><div class='step-item'>🔹 كلاهما في نفس الاتجاه (من A إلى B)</div></div>
+    <div class="final-answer">✅ E = 7.2 × 10⁶ N/C من A إلى B</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> احسب شدة المجال عند نقطة تبعد 30 cm عن شحنة 5 μC.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: E = 5 × 10⁵ N/C</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> ما فرق الجهد اللازم بين لوحين يبعدان 5 cm ليكون المجال 2000 N/C؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: V = 100 V</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> بروتون في مجال 500 N/C. احسب تسارعه. (m_p = 1.67×10⁻²⁷ kg)</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: a = 4.79 × 10¹⁰ m/s²</div>
+</div>
+<hr class="section-sep">
+<h3 class="lesson-title">الدرس 3-3: الجهد الكهربائي والمواسعات</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">الجهد الكهربائي (V): الشغل المبذول لنقل وحدة الشحنات الموجبة من اللانهاية إلى تلك النقطة</li>
+<li class="concept-main">فرق الجهد بين نقطتين: الشغل المبذول لنقل وحدة الشحنات بين النقطتين</li>
+<li class="concept-main">وحدة الجهد: الفولت (V) = جول/كولوم (J/C)</li>
+<li class="concept-main">طاقة الوضع الكهربائية: الشغل المبذول لتجميع منظومة شحنات من اللانهاية</li>
+<li class="concept-main">السطوح متساوية الجهد: سطوح وهمية تكون قيمة الجهد عندها متساوية</li>
+<li class="concept-main">المجال الكهربائي عمودي دائماً على السطوح متساوية الجهد</li>
+<li class="concept-main">المواسعات (المكثفات): جهاز يخزن الطاقة على شكل مجال كهربائي</li>
+<li class="concept-sub">يتكون من لوحين موصلين متوازيين بينهما عازل</li>
+<li class="concept-sub">السعة الكهربائية (C): نسبة الشحنة المخزنة إلى فرق الجهد</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>الجهد لشحنة نقطية</h3>
+  <div class="formula">V = k × Q / r</div>
+  <p>V: الجهد (V) | Q: الشحنة (C) | r: البعد (m)</p>
+</div>
+<div class="law-box">
+  <h3>فرق الجهد والشغل</h3>
+  <div class="formula">ΔV = W / q</div>
+  <p>ΔV: فرق الجهد (V) | W: الشغل (J) | q: الشحنة (C)</p>
+</div>
+<div class="law-box">
+  <h3>طاقة الوضع الكهربائية</h3>
+  <div class="formula">PE = k × q₁ × q₂ / r</div>
+  <p>PE: طاقة الوضع (J)</p>
+</div>
+<div class="law-box">
+  <h3>السعة الكهربائية</h3>
+  <div class="formula">C = Q / V</div>
+  <p>C: السعة (F فاراد) | Q: الشحنة (C) | V: فرق الجهد (V)</p>
+</div>
+<div class="law-box">
+  <h3>سعة المواسع ذي اللوحين المتوازيين</h3>
+  <div class="formula">C = ε₀ × κ × A / d</div>
+  <p>A: مساحة اللوح (m²) | d: المسافة بين اللوحين (m) | κ: ثابت العزل</p>
+</div>
+<div class="law-box">
+  <h3>الطاقة المخزنة في المواسع</h3>
+  <div class="formula">U = ½CV² = ½QV = Q²/(2C)</div>
+  <p>U: الطاقة (J)</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> المواسعات على التوالي: 1/C = 1/C₁ + 1/C₂ + ... | على التوازي: C = C₁ + C₂ + ...</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">احسب الجهد عند نقطة تبعد 0.3 m عن شحنة 6 μC.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 V = 9×10⁹ × 6×10⁻⁶ / 0.3</div></div>
+    <div class="final-answer">✅ V = 1.8 × 10⁵ V = 180 kV</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">مواسع سعته 10 μF شُحن بفرق جهد 100 V. احسب: (أ) الشحنة (ب) الطاقة.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 (أ) Q = C×V = 10×10⁻⁶ × 100 = 10⁻³ C = 1 mC</div><div class='step-item'>🔹 (ب) U = ½CV² = ½ × 10×10⁻⁶ × (100)² = 0.05 J</div></div>
+    <div class="final-answer">✅ (أ) Q = 1 mC | (ب) U = 0.05 J</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">مواسعان C₁ = 3 μF و C₂ = 6 μF على التوالي مع مصدر 12 V. احسب السعة المكافئة والشحنة.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 1/C = 1/3 + 1/6 = 1/2 → C = 2 μF</div><div class='step-item'>🔹 Q = C×V = 2×10⁻⁶ × 12 = 24 μC</div><div class='step-item'>🔹 في التوالي: الشحنة متساوية على كل مواسع</div></div>
+    <div class="final-answer">✅ C_eq = 2 μF | Q₁ = Q₂ = 24 μC</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> احسب الشغل المبذول لنقل شحنة 5 μC بين نقطتين فرق الجهد بينهما 200 V.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: W = 10⁻³ J = 1 mJ</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> مواسعان C₁ = 4 μF و C₂ = 6 μF على التوازي. احسب السعة المكافئة.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: C = 10 μF</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> مواسع ذو لوحين متوازيين: مساحة كل لوح 0.01 m² والمسافة 0.5 mm. احسب سعته.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: C ≈ 177 pF</div>
+</div>
+<hr class="section-sep">
+<h4 class="section-title">📝 بنك أسئلة الوحدة الثالثة</h4>
+<h3 class="sub-section-header">أولاً: أسئلة الاختيار من متعدد</h3>
+<div class="mcq-question">
+  <h4>1- الشحنة الكهربائية الأساسية (e) تساوي:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">1.6 × 10⁻¹⁹ C</button><button class="option-btn" onclick="selectOption(this)">9.11 × 10⁻³¹ C</button><button class="option-btn" onclick="selectOption(this)">1.67 × 10⁻²⁷ C</button><button class="option-btn" onclick="selectOption(this)">6.022 × 10²³ C</button></div>
+</div>
+<div class="mcq-question">
+  <h4>2- إذا ضاعفت المسافة بين شحنتين، فإن القوة بينهما:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">تتضاعف</button><button class="option-btn" onclick="selectOption(this)">تتربع</button><button class="option-btn" onclick="selectOption(this)">تصبح ربعها</button><button class="option-btn" onclick="selectOption(this)">لا تتغير</button></div>
+</div>
+<div class="mcq-question">
+  <h4>3- اتجاه المجال الكهربائي:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">نحو الشحنة الموجبة</button><button class="option-btn" onclick="selectOption(this)">بعيداً عن الشحنة السالبة</button><button class="option-btn" onclick="selectOption(this)">نحو الشحنة السالبة</button><button class="option-btn" onclick="selectOption(this)">عمودي دائماً</button></div>
+</div>
+<div class="mcq-question">
+  <h4>4- السعة الكهربائية للمواسع تتعلق بـ:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">المادة العازلة فقط</button><button class="option-btn" onclick="selectOption(this)">مساحة اللوحين والمسافة بينهما ونوع العازل</button><button class="option-btn" onclick="selectOption(this)">فرق الجهد المطبق فقط</button><button class="option-btn" onclick="selectOption(this)">مقدار الشحنة المخزنة</button></div>
+</div>
+<h3 class="sub-section-header">ثانياً: المسائل الحسابية والمقالية</h3>
+<div class="open-question">
+  <h4>س1: شحنتان: q₁ = 6 μC و q₂ = −4 μC تبعدان 15 cm. احسب القوة الكهربائية بينهما.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">F = 9.6 N (تجاذب)</div>
+</div>
+<div class="open-question">
+  <h4>س2: مواسع سعته 20 μF شُحن بفرق جهد 50 V. احسب الشحنة المخزنة والطاقة.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">Q = 10⁻³ C | U = 0.025 J</div>
+</div>
+<div class="open-question">
+  <h4>س3: احسب الجهد الكهربائي عند نقطة تبعد 20 cm عن شحنة 5 μC.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">V = 2.25 × 10⁵ V</div>
+</div>
+<div class="open-question">
+  <h4>س4: في مجال كهربائي منتظم شدته 3000 N/C، احسب القوة المؤثرة على إلكترون.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">F = 4.8 × 10⁻¹⁶ N</div>
+</div>
+</div><div style="text-align: center; margin-top: 40px;"><button class="mark-done-btn ripple-btn" data-unit="unit3">✅ أتممت دراسة الوحدة</button></div></div>
+<div id="unit4" class="tab-pane">
+<div class="timer-container">
+  <div>
+    <h3 style="color:var(--danger)">⏱️ مؤقت الاختبار</h3>
+    <p style="color:var(--text-muted); font-size:0.9rem">درّب نفسك على سرعة الحل</p>
+  </div>
+  <div class="timer-display" id="timer4">00:00</div>
+  <div class="timer-controls">
+    <button class="timer-btn start-btn" data-timer="timer4">▶ ابدأ</button>
+    <button class="timer-btn pause-btn" data-timer="timer4">⏸ توقف</button>
+    <button class="timer-btn reset-btn" data-timer="timer4">🔄 إعادة</button>
+  </div>
+</div>
+<div class="card">
+<h2>💧 الوحدة الرابعة: سلوك الموائع</h2>
+<h3 class="lesson-title">الدرس 4-1: الموائع الساكنة</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">المائع: مادة ليس لها شكل ثابت وتأخذ شكل الوعاء الذي توضع فيه (سوائل وغازات)</li>
+<li class="concept-main">الكثافة (ρ): كتلة وحدة الحجوم من المادة</li>
+<li class="concept-main">الضغط (P): القوة العمودية المؤثرة على وحدة المساحات</li>
+<li class="concept-main">الضغط عند نقطة في سائل ساكن يعتمد على: كثافة السائل، عمق النقطة، تسارع الجاذبية</li>
+<li class="concept-main">الضغط الكلي عند عمق h: P = P₀ + ρgh حيث P₀ الضغط الجوي</li>
+<li class="concept-main">مبدأ باسكال: الضغط المؤثر على سائل محصور ينتقل بالتساوي إلى جميع أجزاء السائل</li>
+<li class="concept-main">تطبيقات مبدأ باسكال: المكبس الهيدروليكي، فرامل السيارة الهيدروليكية</li>
+<li class="concept-main">قاعدة أرخميدس: الجسم المغمور في مائع تؤثر عليه قوة دفع (طفو) رأسياً لأعلى</li>
+<li class="concept-main">قوة الطفو تساوي وزن المائع المزاح</li>
+<li class="concept-main">شروط الطفو:</li>
+<li class="concept-sub">إذا كان ρ_body < ρ_fluid: الجسم يطفو</li>
+<li class="concept-sub">إذا كان ρ_body = ρ_fluid: الجسم يظل معلقاً</li>
+<li class="concept-sub">إذا كان ρ_body > ρ_fluid: الجسم يغوص</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>الكثافة</h3>
+  <div class="formula">ρ = m / V</div>
+  <p>ρ: الكثافة (kg/m³) | m: الكتلة (kg) | V: الحجم (m³)</p>
+</div>
+<div class="law-box">
+  <h3>الضغط</h3>
+  <div class="formula">P = F / A</div>
+  <p>P: الضغط (Pa = N/m²) | F: القوة (N) | A: المساحة (m²)</p>
+</div>
+<div class="law-box">
+  <h3>ضغط السائل عند عمق h</h3>
+  <div class="formula">P = P₀ + ρgh</div>
+  <p>P₀: الضغط الجوي | ρ: كثافة السائل | g: تسارع الجاذبية | h: العمق</p>
+</div>
+<div class="law-box">
+  <h3>مبدأ باسكال</h3>
+  <div class="formula">F₁/A₁ = F₂/A₂</div>
+  <p>الضغط ينتقل بالتساوي في السائل المحصور</p>
+</div>
+<div class="law-box">
+  <h3>قوة الطفو (أرخميدس)</h3>
+  <div class="formula">F_b = ρ_f × g × V_d</div>
+  <p>F_b: قوة الطفو (N) | ρ_f: كثافة المائع | V_d: حجم المائع المزاح (m³)</p>
+</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">احسب الضغط الكلي عند عمق 10 m في بحيرة ماء عذب. (ρ = 1000 kg/m³، P₀ = 1.013 × 10⁵ Pa)</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 P = P₀ + ρgh</div><div class='step-item'>🔹 P = 1.013×10⁵ + 1000×9.8×10</div><div class='step-item'>🔹 P = 1.013×10⁵ + 0.98×10⁵</div></div>
+    <div class="final-answer">✅ P = 1.993 × 10⁵ Pa ≈ 2 atm</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">مكبس هيدروليكي: مساحة المكبس الصغير 5 cm² والكبير 200 cm². ما القوة اللازمة لرفع سيارة وزنها 15000 N؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 F₁/A₁ = F₂/A₂</div><div class='step-item'>🔹 F₁ = 15000 × 5/200</div></div>
+    <div class="final-answer">✅ F₁ = 375 N</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">مكعب حديد حجمه 0.01 m³ وكثافته 7800 kg/m³ مغمور في الماء. احسب قوة الطفو والوزن الظاهري.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 F_b = 1000 × 9.8 × 0.01 = 98 N</div><div class='step-item'>🔹 W = 7800 × 0.01 × 9.8 = 764.4 N</div><div class='step-item'>🔹 W' = W − F_b = 764.4 − 98</div></div>
+    <div class="final-answer">✅ F_b = 98 N | W' = 666.4 N</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> احسب الضغط المطلق عند قاع خزان ماء ارتفاعه 5 m.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: P = 1.5 × 10⁵ Pa</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> جسم كثافته 800 kg/m³ وحجمه 0.5 m³ موضوع في ماء. هل يطفو؟ احسب الحجم المغمور.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: يطفو. الحجم المغمور = 0.4 m³</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> ما أقصى عمق يمكن للغواص تحمله إذا كان الضغط الأقصى 4 atm؟ (ρ_sea = 1025 kg/m³)</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: h ≈ 30 m</div>
+</div>
+<hr class="section-sep">
+<h3 class="lesson-title">الدرس 4-2: ديناميكا الموائع ومعادلة برنولي</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">الجريان المستقر (الصفائحي): جريان منتظم تتحرك فيه طبقات المائع بشكل متوازٍ وبسرعات ثابتة</li>
+<li class="concept-main">الجريان المضطرب: جريان غير منتظم تتكون فيه دوامات</li>
+<li class="concept-main">معدل التدفق الحجمي (Q): حجم المائع المتدفق خلال مقطع عرضي في وحدة الزمن</li>
+<li class="concept-main">معادلة الاستمرارية: تعبر عن حفظ الكتلة في المائع المتدفق</li>
+<li class="concept-main">مبدأ برنولي: عند زيادة سرعة المائع ينخفض ضغطه والعكس صحيح</li>
+<li class="concept-main">تطبيقات معادلة برنولي:</li>
+<li class="concept-sub">أنبوب فنتوري: قياس سرعة تدفق المائع</li>
+<li class="concept-sub">رفع الطائرة: الهواء أسرع فوق الجناح فيقل الضغط</li>
+<li class="concept-sub">مرذاذ العطور: تيار هواء سريع يقلل الضغط فيسحب السائل</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>معادلة الاستمرارية</h3>
+  <div class="formula">A₁v₁ = A₂v₂</div>
+  <p>A: مساحة المقطع (m²) | v: سرعة التدفق (m/s)</p>
+</div>
+<div class="law-box">
+  <h3>معدل التدفق الحجمي</h3>
+  <div class="formula">Q = A × v</div>
+  <p>Q: معدل التدفق (m³/s)</p>
+</div>
+<div class="law-box">
+  <h3>معادلة برنولي</h3>
+  <div class="formula">P₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂</div>
+  <p>P: الضغط | ½ρv²: ضغط الحركة | ρgh: ضغط الارتفاع</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> معادلة برنولي تطبق على المائع المثالي: غير قابل للانضغاط، عديم اللزوجة، ذو جريان مستقر</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">ماء يتدفق في أنبوب. عند المقطع الأول: القطر 10 cm والسرعة 2 m/s. عند المقطع الثاني: القطر 5 cm. احسب سرعة الماء في المقطع الثاني.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 A₁v₁ = A₂v₂</div><div class='step-item'>🔹 A₁/A₂ = (d₁/d₂)² = (10/5)² = 4</div><div class='step-item'>🔹 v₂ = v₁ × A₁/A₂ = 2 × 4</div></div>
+    <div class="final-answer">✅ v₂ = 8 m/s</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">في أنبوب أفقي: عند النقطة 1 الضغط 3 × 10⁵ Pa والسرعة 1 m/s. عند النقطة 2 السرعة 4 m/s. احسب الضغط عند النقطة 2.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 P₁ + ½ρv₁² = P₂ + ½ρv₂²</div><div class='step-item'>🔹 P₂ = P₁ + ½ρ(v₁² − v₂²)</div><div class='step-item'>🔹 P₂ = 3×10⁵ + ½×1000×(1−16) = 3×10⁵ − 7500</div></div>
+    <div class="final-answer">✅ P₂ = 2.925 × 10⁵ Pa</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> ماء يتدفق بمعدل 0.002 m³/s في أنبوب قطره 4 cm. احسب سرعة الماء.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: v ≈ 1.59 m/s</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> في أنبوب رأسي: سرعة الماء في الأسفل 3 m/s وضغطه 2 × 10⁵ Pa. احسب الضغط عند ارتفاع 5 m بنفس السرعة.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: P₂ = 1.51 × 10⁵ Pa</div>
+</div>
+<hr class="section-sep">
+<h3 class="lesson-title">الدرس 4-3: الغاز المثالي وقوانين الغازات</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">الغاز المثالي: نموذج نظري للغاز تكون فيه:</li>
+<li class="concept-main">درجة الحرارة المطلقة (كلفن): T(K) = T(°C) + 273</li>
+<li class="concept-main">قوانين الغازات:</li>
+<li class="concept-sub">الجزيئات نقطية (حجمها مهمل)</li>
+<li class="concept-sub">لا توجد قوى تجاذب أو تنافر بين الجزيئات</li>
+<li class="concept-sub">التصادمات مرنة تماماً</li>
+<li class="concept-main">قوانين الغازات:</li>
+<li class="concept-sub">قانون بويل (ثبوت T): P₁V₁ = P₂V₂</li>
+<li class="concept-sub">قانون شارل (ثبوت P): V₁/T₁ = V₂/T₂</li>
+<li class="concept-sub">قانون جاي-لوساك (ثبوت V): P₁/T₁ = P₂/T₂</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>قانون الغاز المثالي</h3>
+  <div class="formula">PV = nRT</div>
+  <p>P: الضغط (Pa) | V: الحجم (m³) | n: عدد المولات | R = 8.314 J/(mol·K) | T: الحرارة (K)</p>
+</div>
+<div class="law-box">
+  <h3>قانون الغاز المثالي (بدلالة N)</h3>
+  <div class="formula">PV = NkT</div>
+  <p>N: عدد الجزيئات | k = 1.38 × 10⁻²³ J/K (ثابت بولتزمان)</p>
+</div>
+<div class="law-box">
+  <h3>قانون بويل (T ثابتة)</h3>
+  <div class="formula">P₁V₁ = P₂V₂</div>
+  <p>العلاقة بين الضغط والحجم عكسية</p>
+</div>
+<div class="law-box">
+  <h3>قانون شارل (P ثابت)</h3>
+  <div class="formula">V₁/T₁ = V₂/T₂</div>
+  <p>العلاقة بين الحجم ودرجة الحرارة طردية</p>
+</div>
+<div class="law-box">
+  <h3>قانون جاي-لوساك (V ثابت)</h3>
+  <div class="formula">P₁/T₁ = P₂/T₂</div>
+  <p>العلاقة بين الضغط ودرجة الحرارة طردية</p>
+</div>
+<div class="law-box">
+  <h3>القانون العام للغازات</h3>
+  <div class="formula">P₁V₁/T₁ = P₂V₂/T₂</div>
+  <p>يجمع بين القوانين الثلاثة</p>
+</div>
+<div class="law-box">
+  <h3>متوسط الطاقة الحركية للجزيء</h3>
+  <div class="formula">KE_avg = (3/2) kT</div>
+  <p>k: ثابت بولتزمان | T: درجة الحرارة المطلقة (K)</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> يجب دائماً استخدام درجة الحرارة بالكلفن في جميع قوانين الغازات</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">غاز مثالي حجمه 2 L عند ضغط 1 atm ودرجة حرارة 27°C. ما حجمه عند ضغط 3 atm ودرجة 127°C؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 T₁ = 300 K , T₂ = 400 K</div><div class='step-item'>🔹 P₁V₁/T₁ = P₂V₂/T₂</div><div class='step-item'>🔹 V₂ = P₁V₁T₂/(T₁P₂) = 1×2×400/(300×3) = 800/900</div></div>
+    <div class="final-answer">✅ V₂ = 0.89 L</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">احسب عدد مولات غاز مثالي حجمه 0.5 m³ عند ضغط 2 × 10⁵ Pa ودرجة حرارة 300 K.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 PV = nRT</div><div class='step-item'>🔹 n = PV/RT = (2×10⁵ × 0.5) / (8.314 × 300)</div></div>
+    <div class="final-answer">✅ n ≈ 40.1 mol</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">احسب متوسط الطاقة الحركية لجزيء غاز عند درجة حرارة 27°C.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 T = 300 K</div><div class='step-item'>🔹 KE = (3/2) × 1.38×10⁻²³ × 300</div></div>
+    <div class="final-answer">✅ KE = 6.21 × 10⁻²¹ J</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> غاز ضغطه 2 atm وحجمه 5 L. ما ضغطه إذا ضُغط إلى حجم 2 L (T ثابتة)؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: P₂ = 5 atm</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> غاز حجمه 3 L عند 27°C. ما حجمه عند 127°C (P ثابت)؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: V₂ = 4 L</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> إطار سيارة حجمه 30 L ممتلئ بهواء عند 20°C وضغط 2.5 atm. ما ضغطه عند 50°C (V ثابت)؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: P₂ ≈ 2.76 atm</div>
+</div>
+<hr class="section-sep">
+<h4 class="section-title">📝 بنك أسئلة الوحدة الرابعة</h4>
+<h3 class="sub-section-header">أولاً: أسئلة الاختيار من متعدد</h3>
+<div class="mcq-question">
+  <h4>1- عندما يتدفق مائع مثالي عبر أنبوب يضيق مقطعه، فإن سرعته:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">تقل</button><button class="option-btn" onclick="selectOption(this)">تزداد</button><button class="option-btn" onclick="selectOption(this)">تظل ثابتة</button><button class="option-btn" onclick="selectOption(this)">تنعدم</button></div>
+</div>
+<div class="mcq-question">
+  <h4>2- ينص مبدأ باسكال على أن الضغط الإضافي المسلط على مائع محصور:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">يقل كلما زاد العمق</button><button class="option-btn" onclick="selectOption(this)">ينتقل بالتساوي إلى جميع نقاط المائع</button><button class="option-btn" onclick="selectOption(this)">يعتمد على شكل الوعاء</button><button class="option-btn" onclick="selectOption(this)">يؤثر فقط على قاعدة الوعاء</button></div>
+</div>
+<div class="mcq-question">
+  <h4>3- عند مضاعفة درجة الحرارة المطلقة لغاز مثالي مع ثبات حجمه:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">يقل ضغطه للنصف</button><button class="option-btn" onclick="selectOption(this)">يتضاعف ضغطه</button><button class="option-btn" onclick="selectOption(this)">يزداد ضغطه 4 مرات</button><button class="option-btn" onclick="selectOption(this)">لا يتغير ضغطه</button></div>
+</div>
+<div class="mcq-question">
+  <h4>4- قوة الطفو المؤثرة على جسم مغمور في ماء تعتمد على:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">كثافة الجسم فقط</button><button class="option-btn" onclick="selectOption(this)">وزن المائع المزاح</button><button class="option-btn" onclick="selectOption(this)">حجم الجسم الكلي دائماً</button><button class="option-btn" onclick="selectOption(this)">كتلة الجسم</button></div>
+</div>
+<h3 class="sub-section-header">ثانياً: المسائل الحسابية والمقالية</h3>
+<div class="open-question">
+  <h4>س1: يتدفق الماء عبر أنبوب مساحة مقطعه 0.04 m² بسرعة 2 m/s، ثم يضيق الأنبوب لتصبح مساحة مقطعه 0.01 m². احسب سرعة الماء في الجزء الضيق.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">v₂ = 8 m/s</div>
+</div>
+<div class="open-question">
+  <h4>س2: غواصة توجد على عمق 50 m في ماء البحر (ρ = 1030 kg/m³). احسب الضغط الكلي. (P₀ = 1.013 × 10⁵ Pa)</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">P_total ≈ 6.06 × 10⁵ Pa</div>
+</div>
+<div class="open-question">
+  <h4>س3: إطار سيارة حجمه 30 L عند 20°C وضغط 2.5 atm. ما ضغطه بعد القيادة إذا ارتفعت الحرارة إلى 50°C (V ثابت)؟</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">P₂ ≈ 2.76 atm</div>
+</div>
+</div><div style="text-align: center; margin-top: 40px;"><button class="mark-done-btn ripple-btn" data-unit="unit4">✅ أتممت دراسة الوحدة</button></div></div>
+<div id="unit5" class="tab-pane">
+<div class="timer-container">
+  <div>
+    <h3 style="color:var(--danger)">⏱️ مؤقت الاختبار</h3>
+    <p style="color:var(--text-muted); font-size:0.9rem">درّب نفسك على سرعة الحل</p>
+  </div>
+  <div class="timer-display" id="timer5">00:00</div>
+  <div class="timer-controls">
+    <button class="timer-btn start-btn" data-timer="timer5">▶ ابدأ</button>
+    <button class="timer-btn pause-btn" data-timer="timer5">⏸ توقف</button>
+    <button class="timer-btn reset-btn" data-timer="timer5">🔄 إعادة</button>
+  </div>
+</div>
+<div class="card">
+<h2>🔥 الوحدة الخامسة: أساسيات الديناميكا الحرارية</h2>
+<h3 class="lesson-title">الدرس 5-1: خصائص النظام الديناميكي الحراري والقانون الأول</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">النظام الديناميكي الحراري: جزء من الكون نختاره للدراسة، والباقي يُسمى المحيط</li>
+<li class="concept-main">أنواع الأنظمة:</li>
+<li class="concept-sub">النظام المفتوح: يتبادل المادة والطاقة مع المحيط</li>
+<li class="concept-sub">النظام المغلق: يتبادل الطاقة فقط مع المحيط</li>
+<li class="concept-sub">النظام المعزول: لا يتبادل مادة ولا طاقة</li>
+<li class="concept-main">متغيرات الحالة: الضغط (P)، الحجم (V)، درجة الحرارة (T)، الطاقة الداخلية (U)</li>
+<li class="concept-main">الطاقة الداخلية (U): مجموع الطاقة الحركية والكامنة لجميع جزيئات النظام</li>
+<li class="concept-main">للغاز المثالي أحادي الذرة: U = (3/2)nRT</li>
+<li class="concept-main">عند التمدد (ΔV > 0): الغاز يبذل شغلاً موجباً على المحيط</li>
+<li class="concept-main">عند الانضغاط (ΔV < 0): المحيط يبذل شغلاً على الغاز</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>الطاقة الداخلية (غاز أحادي الذرة)</h3>
+  <div class="formula">U = (3/2) nRT</div>
+  <p>U: الطاقة الداخلية (J) | n: عدد المولات | T: درجة الحرارة المطلقة (K)</p>
+</div>
+<div class="law-box">
+  <h3>التغير في الطاقة الداخلية</h3>
+  <div class="formula">ΔU = (3/2) nRΔT</div>
+  <p>ΔT: التغير في درجة الحرارة</p>
+</div>
+<div class="law-box">
+  <h3>الشغل عند ضغط ثابت</h3>
+  <div class="formula">W = PΔV = P(V₂ − V₁)</div>
+  <p>W: الشغل (J) | P: الضغط (Pa) | ΔV: التغير في الحجم (m³)</p>
+</div>
+<div class="law-box">
+  <h3>القانون الأول للديناميكا الحرارية</h3>
+  <div class="formula">ΔU = Q − W</div>
+  <p>ΔU: التغير في الطاقة الداخلية | Q: الحرارة المضافة | W: الشغل المبذول بواسطة النظام</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> القانون الأول هو تطبيق لمبدأ حفظ الطاقة</div>
+<div class="tip-box"><strong>💡 نصيحة:</strong> إذا كان Q > 0: النظام يكتسب حرارة | إذا كان Q < 0: النظام يفقد حرارة</div>
+<div class="tip-box"><strong>💡 نصيحة:</strong> إذا كان W > 0: النظام يبذل شغلاً (تمدد) | إذا كان W < 0: يُبذل شغل على النظام (انضغاط)</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">غاز مثالي أحادي الذرة (2 mol) ارتفعت حرارته من 300 K إلى 500 K. احسب ΔU.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 ΔU = (3/2) nRΔT</div><div class='step-item'>🔹 ΔU = (3/2) × 2 × 8.314 × 200</div></div>
+    <div class="final-answer">✅ ΔU = 4988.4 J ≈ 5 kJ</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">غاز يتمدد عند ضغط ثابت 2 × 10⁵ Pa من حجم 0.01 m³ إلى 0.03 m³. أُضيف له 8000 J. احسب: (أ) الشغل (ب) ΔU.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 (أ) W = PΔV = 2×10⁵ × (0.03−0.01) = 4000 J</div><div class='step-item'>🔹 (ب) ΔU = Q − W = 8000 − 4000</div></div>
+    <div class="final-answer">✅ (أ) W = 4000 J | (ب) ΔU = 4000 J</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">بُذل شغل على غاز مقداره 500 J وفقد الغاز حرارة 300 J. احسب التغير في طاقته الداخلية.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 W = −500 J (شغل بُذل على الغاز)</div><div class='step-item'>🔹 Q = −300 J (الغاز فقد حرارة)</div><div class='step-item'>🔹 ΔU = Q − W = (−300) − (−500) = 200 J</div></div>
+    <div class="final-answer">✅ ΔU = +200 J</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> غاز يكتسب 6000 J ويبذل شغلاً 2500 J. ما التغير في طاقته الداخلية؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: ΔU = 3500 J</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> غاز مثالي (3 mol) عند 400 K. احسب طاقته الداخلية.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: U = 14942.4 J</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> غاز يتمدد من 5 L إلى 15 L عند ضغط ثابت 1 atm. احسب الشغل المبذول.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: W ≈ 1013 J</div>
+</div>
+<hr class="section-sep">
+<h3 class="lesson-title">الدرس 5-2: العمليات الديناميكية الحرارية والآلات الحرارية</h3>
+<h4 class="section-title">📌 العمليات الديناميكية الحرارية</h4>
+<ul class="concept-list">
+<li class="concept-main">العملية الإيزوبارية (ثبوت الضغط - Isobaric):</li>
+<li class="concept-sub">P = ثابت ، W = PΔV ، Q = ΔU + PΔV</li>
+<li class="concept-main">العملية الإيزوكورية (ثبوت الحجم - Isochoric):</li>
+<li class="concept-sub">V = ثابت ، W = 0 ، Q = ΔU</li>
+<li class="concept-sub">كل الحرارة المضافة تتحول إلى تغير في الطاقة الداخلية</li>
+<li class="concept-main">العملية الإيزوثرمية (ثبوت درجة الحرارة - Isothermal):</li>
+<li class="concept-sub">T = ثابت ، ΔU = 0 ، Q = W</li>
+<li class="concept-main">العملية الأديباتية (بدون تبادل حراري - Adiabatic):</li>
+<li class="concept-sub">Q = 0 ، ΔU = −W</li>
+</ul>
+<div class="info-table"><table><thead><tr><th>العملية</th><th>الثابت</th><th>W</th><th>Q</th><th>ΔU</th></tr></thead><tbody>
+<tr><td>إيزوبارية</td><td>P</td><td>PΔV</td><td>ΔU + W</td><td>(3/2)nRΔT</td></tr>
+<tr><td>إيزوكورية</td><td>V</td><td>0</td><td>ΔU</td><td>(3/2)nRΔT</td></tr>
+<tr><td>إيزوثرمية</td><td>T</td><td>Q</td><td>W</td><td>0</td></tr>
+<tr><td>أديباتية</td><td>Q=0</td><td>−ΔU</td><td>0</td><td>−W</td></tr>
+</tbody></table></div>
+<h4 class="section-title">⚙️ الآلات الحرارية وكفاءة كارنو</h4>
+<ul class="concept-list">
+<li class="concept-main">الآلة الحرارية: جهاز يحول الطاقة الحرارية إلى شغل ميكانيكي</li>
+<li class="concept-main">تعمل بين مستودعين: ساخن (T_H) وبارد (T_C)</li>
+<li class="concept-main">آلة كارنو: آلة حرارية مثالية تعمل بأعلى كفاءة ممكنة</li>
+<li class="concept-main">القانون الثاني للديناميكا الحرارية:</li>
+<li class="concept-sub">صيغة كلاوزيوس: الحرارة لا تنتقل تلقائياً من جسم بارد إلى جسم ساخن</li>
+<li class="concept-sub">صيغة كلفن-بلانك: لا يمكن بناء آلة حرارية كفاءتها 100%</li>
+<li class="concept-sub">الإنتروبي (S): مقياس لدرجة الفوضى في النظام — الإنتروبي الكلي في تزايد مستمر</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>كفاءة الآلة الحرارية</h3>
+  <div class="formula">η = W/Q_H = (Q_H − Q_C)/Q_H = 1 − Q_C/Q_H</div>
+  <p>η: الكفاءة | W: الشغل | Q_H: حرارة المستودع الساخن | Q_C: حرارة المستودع البارد</p>
+</div>
+<div class="law-box">
+  <h3>كفاءة آلة كارنو (القصوى)</h3>
+  <div class="formula">η_max = 1 − T_C/T_H</div>
+  <p>T_C: درجة المستودع البارد (K) | T_H: درجة المستودع الساخن (K)</p>
+</div>
+<div class="law-box">
+  <h3>معامل أداء المبرد</h3>
+  <div class="formula">COP = Q_C/W = Q_C/(Q_H − Q_C)</div>
+  <p>كلما زاد COP كان المبرد أفضل</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> كفاءة كارنو هي الحد الأقصى النظري — لا يمكن لأي آلة حرارية حقيقية تجاوزها</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">آلة حرارية تأخذ 1000 J من مستودع ساخن وتطرد 600 J إلى مستودع بارد. احسب: (أ) الشغل (ب) الكفاءة.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 (أ) W = Q_H − Q_C = 1000 − 600 = 400 J</div><div class='step-item'>🔹 (ب) η = W/Q_H = 400/1000 = 0.4</div></div>
+    <div class="final-answer">✅ (أ) W = 400 J | (ب) η = 40%</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">آلة كارنو تعمل بين 527°C و 27°C. احسب كفاءتها القصوى.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 T_H = 527 + 273 = 800 K</div><div class='step-item'>🔹 T_C = 27 + 273 = 300 K</div><div class='step-item'>🔹 η = 1 − 300/800 = 1 − 0.375</div></div>
+    <div class="final-answer">✅ η = 0.625 = 62.5%</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">في عملية إيزوكورية: 3 mol من غاز أحادي الذرة ارتفعت حرارته من 200 K إلى 400 K. احسب Q والشغل.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 V = ثابت → W = 0</div><div class='step-item'>🔹 Q = ΔU = (3/2)nRΔT = (3/2) × 3 × 8.314 × 200</div></div>
+    <div class="final-answer">✅ Q = 7482.6 J | W = 0</div>
+  </div>
+</div>
+<h4 class="section-title">📝 بنك أسئلة الوحدة الخامسة</h4>
+<h3 class="sub-section-header">أولاً: أسئلة الاختيار من متعدد</h3>
+<div class="mcq-question">
+  <h4>1- في العملية الإيزوثرمية للغاز المثالي:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">يكون الشغل المبذول صفراً</button><button class="option-btn" onclick="selectOption(this)">يكون ΔU صفراً</button><button class="option-btn" onclick="selectOption(this)">تكون الحرارة المضافة صفراً</button><button class="option-btn" onclick="selectOption(this)">يقل الحجم دائماً</button></div>
+</div>
+<div class="mcq-question">
+  <h4>2- أي من العمليات التالية تمثل عملية أديباتية؟</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">ΔU = 0</button><button class="option-btn" onclick="selectOption(this)">Q = W</button><button class="option-btn" onclick="selectOption(this)">Q = 0</button><button class="option-btn" onclick="selectOption(this)">W = 0</button></div>
+</div>
+<div class="mcq-question">
+  <h4>3- وفقاً للقانون الثاني، كفاءة أي آلة حرارية حقيقية:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">يمكن أن تصل إلى 100%</button><button class="option-btn" onclick="selectOption(this)">تساوي كفاءة كارنو</button><button class="option-btn" onclick="selectOption(this)">دائماً أقل من 100%</button><button class="option-btn" onclick="selectOption(this)">لا تعتمد على درجات الحرارة</button></div>
+</div>
+<div class="mcq-question">
+  <h4>4- في عملية إيزوكورية (ثبوت الحجم):</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">الشغل المبذول يساوي Q_H</button><button class="option-btn" onclick="selectOption(this)">الشغل المبذول = صفر</button><button class="option-btn" onclick="selectOption(this)">T ثابتة</button><button class="option-btn" onclick="selectOption(this)">Q = صفر</button></div>
+</div>
+<h3 class="sub-section-header">ثانياً: المسائل الحسابية والمقالية</h3>
+<div class="open-question">
+  <h4>س1: آلة كارنو تعمل بين 727°C و 127°C. احسب كفاءتها القصوى.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">η = 60%</div>
+</div>
+<div class="open-question">
+  <h4>س2: غاز يتمدد عند ضغط ثابت 1.5 × 10⁵ Pa من 0.02 m³ إلى 0.06 m³ واكتسب 10000 J. احسب W و ΔU.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">W = 6000 J | ΔU = 4000 J</div>
+</div>
+<div class="open-question">
+  <h4>س3: آلة حرارية كفاءتها 25% تأخذ 2000 J من المستودع الساخن. احسب الشغل والحرارة المطرودة.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">W = 500 J | Q_C = 1500 J</div>
+</div>
+</div><div style="text-align: center; margin-top: 40px;"><button class="mark-done-btn ripple-btn" data-unit="unit5">✅ أتممت دراسة الوحدة</button></div></div>
+<div id="unit6" class="tab-pane">
+<div class="timer-container">
+  <div>
+    <h3 style="color:var(--danger)">⏱️ مؤقت الاختبار</h3>
+    <p style="color:var(--text-muted); font-size:0.9rem">درّب نفسك على سرعة الحل</p>
+  </div>
+  <div class="timer-display" id="timer6">00:00</div>
+  <div class="timer-controls">
+    <button class="timer-btn start-btn" data-timer="timer6">▶ ابدأ</button>
+    <button class="timer-btn pause-btn" data-timer="timer6">⏸ توقف</button>
+    <button class="timer-btn reset-btn" data-timer="timer6">🔄 إعادة</button>
+  </div>
+</div>
+<div class="card">
+<h2>⚛️ الوحدة السادسة: ميكانيكا الكم</h2>
+<h3 class="lesson-title">الدرس 6-1: إشعاع الجسم الأسود وفرضية بلانك</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">الجسم الأسود: جسم مثالي يمتص جميع الأشعة الساقطة عليه ويعيد إشعاعها</li>
+<li class="concept-main">إشعاع الجسم الأسود يعتمد فقط على درجة حرارته</li>
+<li class="concept-main">أزمة الفيزياء الكلاسيكية (كارثة فوق البنفسجية):</li>
+<li class="concept-sub">النظرية الكلاسيكية تنبأت بأن شدة الإشعاع تزداد بلا حدود — وهذا يتناقض مع التجربة</li>
+<li class="concept-main">فرضية بلانك (1900): الطاقة مكممة (ليست متصلة)</li>
+<li class="concept-main">تنبعث الطاقة وتُمتص في حزم صغيرة تُسمى كمات (Quanta)</li>
+<li class="concept-main">طاقة الكم الواحد تتناسب طردياً مع التردد: E = hf</li>
+<li class="concept-main">ثابت بلانك: h = 6.626 × 10⁻³⁴ J·s</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>طاقة الكم (فرضية بلانك)</h3>
+  <div class="formula">E = hf = hc/λ</div>
+  <p>E: الطاقة (J) | h: ثابت بلانك | f: التردد (Hz) | c: سرعة الضوء | λ: الطول الموجي (m)</p>
+</div>
+<div class="law-box">
+  <h3>طاقة n كم</h3>
+  <div class="formula">E = nhf</div>
+  <p>n: عدد صحيح (1, 2, 3, ...)</p>
+</div>
+<div class="law-box">
+  <h3>العلاقة بين التردد والطول الموجي</h3>
+  <div class="formula">c = f × λ</div>
+  <p>c = 3 × 10⁸ m/s</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> فرضية بلانك كانت بداية ثورة فيزياء الكم — غيرت فهمنا لطبيعة الطاقة والمادة</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">احسب طاقة فوتون من الضوء الأحمر طوله الموجي 700 nm.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 λ = 700 × 10⁻⁹ m</div><div class='step-item'>🔹 E = hc/λ = (6.626×10⁻³⁴ × 3×10⁸) / (700×10⁻⁹)</div></div>
+    <div class="final-answer">✅ E = 2.84 × 10⁻¹⁹ J ≈ 1.78 eV</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">ما تردد فوتون طاقته 3.2 × 10⁻¹⁹ J؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 f = E/h = (3.2×10⁻¹⁹) / (6.626×10⁻³⁴)</div></div>
+    <div class="final-answer">✅ f = 4.83 × 10¹⁴ Hz</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> احسب طاقة فوتون تردده 5 × 10¹⁴ Hz.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: E = 3.31 × 10⁻¹⁹ J</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> ما الطول الموجي لفوتون طاقته 4 × 10⁻¹⁹ J؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: λ = 497 nm</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> قارن بين طاقة فوتون أشعة فوق بنفسجية (λ = 200 nm) وفوتون أشعة تحت حمراء (λ = 1000 nm).</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: E_UV / E_IR = 5</div>
+</div>
+<hr class="section-sep">
+<h3 class="lesson-title">الدرس 6-2: التأثير الكهروضوئي</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">التأثير الكهروضوئي: انبعاث إلكترونات من سطح معدن عند سقوط ضوء مناسب عليه</li>
+<li class="concept-main">الملاحظات التجريبية التي عجزت الفيزياء الكلاسيكية عن تفسيرها:</li>
+<li class="concept-sub">وجود تردد عتبة لا يحدث تحته التأثير الكهروضوئي مهما كانت شدة الضوء</li>
+<li class="concept-sub">الطاقة الحركية للإلكترونات تعتمد على تردد الضوء وليس شدته</li>
+<li class="concept-sub">انبعاث الإلكترونات يحدث فورياً</li>
+<li class="concept-main">تفسير أينشتاين (1905):</li>
+<li class="concept-sub">الضوء يتكون من فوتونات تحمل طاقة E = hf</li>
+<li class="concept-sub">الفوتون يمنح طاقته كاملة لإلكترون واحد</li>
+<li class="concept-sub">جزء من الطاقة يستخدم لتحرير الإلكترون (دالة الشغل) والباقي يتحول لطاقة حركية</li>
+<li class="concept-main">دالة الشغل (φ): أقل طاقة لازمة لتحرير إلكترون من سطح المعدن</li>
+<li class="concept-main">تردد العتبة (f₀): أقل تردد يسبب التأثير الكهروضوئي</li>
+<li class="concept-main">جهد الإيقاف (V₀): أقل فرق جهد يوقف الإلكترونات المنبعثة</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>معادلة أينشتاين للتأثير الكهروضوئي</h3>
+  <div class="formula">KE_max = hf − φ</div>
+  <p>KE_max: الطاقة الحركية القصوى | hf: طاقة الفوتون | φ: دالة الشغل</p>
+</div>
+<div class="law-box">
+  <h3>دالة الشغل وتردد العتبة</h3>
+  <div class="formula">φ = hf₀ = hc/λ₀</div>
+  <p>f₀: تردد العتبة (Hz) | λ₀: الطول الموجي الأقصى (m)</p>
+</div>
+<div class="law-box">
+  <h3>جهد الإيقاف</h3>
+  <div class="formula">eV₀ = KE_max = hf − φ</div>
+  <p>e = 1.6 × 10⁻¹⁹ C | V₀: جهد الإيقاف (V)</p>
+</div>
+<div class="law-box">
+  <h3>تحويل الوحدات</h3>
+  <div class="formula">1 eV = 1.6 × 10⁻¹⁹ J</div>
+  <p>إلكترون فولت: طاقة إلكترون يتسارع عبر فرق جهد 1 V</p>
+</div>
+<div class="note-box"><strong>⚠️ تنبيه مهم:</strong> شدة الضوء تؤثر على عدد الإلكترونات المنبعثة وليس على طاقتها الحركية</div>
+<div class="tip-box"><strong>💡 نصيحة:</strong> لحدوث التأثير الكهروضوئي: يجب أن يكون f > f₀ أو λ < λ₀</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">دالة الشغل لمعدن الصوديوم 2.3 eV. ضوء تردده 8 × 10¹⁴ Hz. احسب: (أ) طاقة الفوتون (ب) KE_max (ج) جهد الإيقاف.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 (أ) E = hf = 6.626×10⁻³⁴ × 8×10¹⁴ = 5.3×10⁻¹⁹ J = 3.31 eV</div><div class='step-item'>🔹 (ب) KE_max = hf − φ = 3.31 − 2.3 = 1.01 eV</div><div class='step-item'>🔹 (ج) eV₀ = KE_max → V₀ = 1.01 V</div></div>
+    <div class="final-answer">✅ (أ) E = 3.31 eV | (ب) KE = 1.01 eV | (ج) V₀ = 1.01 V</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">تردد العتبة لمعدن هو 5 × 10¹⁴ Hz. احسب: (أ) دالة الشغل (ب) الطول الموجي الأقصى.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 (أ) φ = hf₀ = 6.626×10⁻³⁴ × 5×10¹⁴ = 3.31×10⁻¹⁹ J ≈ 2.07 eV</div><div class='step-item'>🔹 (ب) λ₀ = c/f₀ = (3×10⁸) / (5×10¹⁴)</div></div>
+    <div class="final-answer">✅ (أ) φ = 2.07 eV | (ب) λ₀ = 600 nm</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">سقط ضوء طوله الموجي 400 nm على معدن دالة شغله 1.8 eV. هل يحدث تأثير كهروضوئي؟ إذا نعم، احسب KE_max.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 E = hc/λ = (6.626×10⁻³⁴ × 3×10⁸) / (400×10⁻⁹) = 4.97×10⁻¹⁹ J = 3.1 eV</div><div class='step-item'>🔹 بما أن 3.1 eV > 1.8 eV: نعم يحدث</div><div class='step-item'>🔹 KE_max = 3.1 − 1.8 = 1.3 eV</div></div>
+    <div class="final-answer">✅ نعم يحدث | KE_max = 1.3 eV</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> دالة الشغل لمعدن 4.5 eV. ما أقصى طول موجي يسبب التأثير الكهروضوئي؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: λ₀ = 276 nm</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> فوتون طاقته 5 eV يسقط على سطح دالة شغله 2 eV. احسب سرعة الإلكترون المنبعث.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: v ≈ 1.03 × 10⁶ m/s</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> جهد الإيقاف لمعدن عند سقوط ضوء تردده 7 × 10¹⁴ Hz هو 0.6 V. احسب دالة الشغل.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: φ ≈ 2.3 eV</div>
+</div>
+<hr class="section-sep">
+<h3 class="lesson-title">الدرس 6-3: ازدواجية الموجة-الجسيم وطيف ذرة الهيدروجين</h3>
+<h4 class="section-title">📌 المفاهيم الأساسية</h4>
+<ul class="concept-list">
+<li class="concept-main">ازدواجية الموجة-الجسيم: الضوء والمادة لهما طبيعة مزدوجة (موجية وجسيمية)</li>
+<li class="concept-main">فرضية دي برولي (1924): لكل جسيم متحرك طول موجي مرتبط به</li>
+<li class="concept-main">تأثير كومبتون: دليل على الطبيعة الجسيمية للضوء</li>
+<li class="concept-main">نموذج بور للذرة (1913):</li>
+<li class="concept-sub">الإلكترونات تدور في مدارات محددة حول النواة</li>
+<li class="concept-sub">كل مدار له طاقة محددة (مستوى طاقة)</li>
+<li class="concept-sub">الانتقال بين المستويات بامتصاص أو انبعاث فوتون</li>
+<li class="concept-main">مستويات طاقة ذرة الهيدروجين:</li>
+<li class="concept-sub">E_n = −13.6/n² eV حيث n = 1, 2, 3, ...</li>
+<li class="concept-sub">n = 1: المستوى الأرضي | n = ∞: الإلكترون حر (طاقة التأين = 13.6 eV)</li>
+<li class="concept-main">سلاسل الأطياف:</li>
+<li class="concept-sub">سلسلة لايمان: الانتقال إلى n = 1 (فوق بنفسجية)</li>
+<li class="concept-sub">سلسلة بالمر: الانتقال إلى n = 2 (مرئية)</li>
+<li class="concept-sub">سلسلة باشن: الانتقال إلى n = 3 (تحت حمراء)</li>
+<li class="concept-main">مبدأ عدم اليقين لهايزنبرج: لا يمكن تحديد موضع وكمية حركة الجسيم في نفس اللحظة بدقة مطلقة</li>
+</ul>
+<h4 class="section-title">📐 القوانين والعلاقات الرياضية</h4>
+<div class="law-box">
+  <h3>طول موجة دي برولي</h3>
+  <div class="formula">λ = h / (mv) = h / p</div>
+  <p>m: كتلة الجسيم (kg) | v: سرعته (m/s) | p: كمية الحركة (kg·m/s)</p>
+</div>
+<div class="law-box">
+  <h3>مستويات الطاقة لذرة الهيدروجين</h3>
+  <div class="formula">Eₙ = −13.6 / n²  (eV)</div>
+  <p>n: رقم المستوى = 1, 2, 3, ...</p>
+</div>
+<div class="law-box">
+  <h3>طاقة الفوتون المنبعث/الممتص</h3>
+  <div class="formula">E = E_f − E_i = hf = hc/λ</div>
+  <p>E_f: طاقة المستوى النهائي | E_i: طاقة المستوى الابتدائي</p>
+</div>
+<div class="law-box">
+  <h3>مبدأ عدم اليقين لهايزنبرج</h3>
+  <div class="formula">Δx · Δp ≥ h / (4π)</div>
+  <p>Δx: عدم اليقين في الموضع | Δp: عدم اليقين في كمية الحركة</p>
+</div>
+<div class="law-box">
+  <h3>نصف قطر مدار بور</h3>
+  <div class="formula">rₙ = n² × a₀</div>
+  <p>a₀ = 0.0529 nm (نصف قطر بور)</p>
+</div>
+<h4 class="section-title">✏️ أمثلة محلولة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">احسب طول موجة دي برولي لإلكترون يتحرك بسرعة 10⁶ m/s. (m_e = 9.11 × 10⁻³¹ kg)</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 λ = h/(mv) = 6.626×10⁻³⁴ / (9.11×10⁻³¹ × 10⁶)</div></div>
+    <div class="final-answer">✅ λ = 7.27 × 10⁻¹⁰ m = 0.727 nm</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">إلكترون في ذرة هيدروجين ينتقل من n = 3 إلى n = 2. احسب: (أ) طاقة الفوتون (ب) طوله الموجي (ج) السلسلة الطيفية.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 E₃ = −13.6/9 = −1.51 eV</div><div class='step-item'>🔹 E₂ = −13.6/4 = −3.4 eV</div><div class='step-item'>🔹 (أ) E = −1.51 − (−3.4) = 1.89 eV</div><div class='step-item'>🔹 (ب) λ = hc/E = 657 nm (ضوء أحمر)</div><div class='step-item'>🔹 (ج) الانتقال إلى n = 2: سلسلة بالمر</div></div>
+    <div class="final-answer">✅ (أ) E = 1.89 eV | (ب) λ = 657 nm | (ج) سلسلة بالمر</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">ما الطاقة اللازمة لتأيين ذرة هيدروجين من مستواها الأرضي؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 E₁ = −13.6/1² = −13.6 eV</div><div class='step-item'>🔹 E_∞ = 0 eV</div><div class='step-item'>🔹 طاقة التأين = 0 − (−13.6)</div></div>
+    <div class="final-answer">✅ طاقة التأين = 13.6 eV</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (4)</h4>
+  </div>
+  <p class="example-q">إلكترون في ذرة هيدروجين في المستوى n = 4. كم عدد الخطوط الطيفية الممكنة؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 عدد الخطوط = n(n−1)/2</div><div class='step-item'>🔹 = 4×3/2</div></div>
+    <div class="final-answer">✅ عدد الخطوط = 6 خطوط طيفية</div>
+  </div>
+</div>
+<h4 class="section-title">📝 تدريبات للطالب</h4>
+<div class="exercise-box">
+  <p><strong>تدريب (1):</strong> احسب طول موجة دي برولي لبروتون بسرعة 10⁶ m/s. (m_p = 1.67 × 10⁻²⁷ kg)</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: λ = 3.97 × 10⁻¹³ m</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (2):</strong> احسب طاقة وطول موجة الفوتون عند انتقال إلكترون في ذرة H من n=4 إلى n=2.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: E = 2.55 eV | λ = 486 nm</div>
+</div>
+<div class="exercise-box">
+  <p><strong>تدريب (3):</strong> ما طاقة التأين الكاملة لإلكترون في المستوى n = 2 في ذرة هيدروجين؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ الإجابة</button><div class="answer-box" style="display:none">الجواب: E = 3.4 eV</div>
+</div>
+<hr class="section-sep">
+<h4 class="section-title">📝 بنك أسئلة الوحدة السادسة</h4>
+<h3 class="sub-section-header">أولاً: أسئلة الاختيار من متعدد</h3>
+<div class="mcq-question">
+  <h4>1- ينص مبدأ عدم اليقين على أنه يستحيل تحديد ........ في نفس اللحظة بدقة.</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">سرعة وتسارع الجسيم</button><button class="option-btn" onclick="selectOption(this)">كتلة وشحنة الجسيم</button><button class="option-btn" onclick="selectOption(this)">موضع وكمية حركة الجسيم</button><button class="option-btn" onclick="selectOption(this)">طاقة وزمن الجسيم</button></div>
+</div>
+<div class="mcq-question">
+  <h4>2- في التأثير الكهروضوئي، تعتمد الطاقة الحركية العظمى للإلكترونات على:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">شدة الضوء الساقط</button><button class="option-btn" onclick="selectOption(this)">تردد الضوء الساقط</button><button class="option-btn" onclick="selectOption(this)">زمن التعرض</button><button class="option-btn" onclick="selectOption(this)">مساحة سطح المعدن</button></div>
+</div>
+<div class="mcq-question">
+  <h4>3- انتقال الإلكترون في ذرة H من مستوى أعلى إلى n=2 ينتج فوتوناً يقع ضمن:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">سلسلة لايمان</button><button class="option-btn" onclick="selectOption(this)">سلسلة بالمر</button><button class="option-btn" onclick="selectOption(this)">سلسلة باشن</button><button class="option-btn" onclick="selectOption(this)">سلسلة براكيت</button></div>
+</div>
+<div class="mcq-question">
+  <h4>4- زيادة شدة الضوء في التأثير الكهروضوئي:</h4>
+  <div class="options-grid"><button class="option-btn" onclick="selectOption(this)">تزيد طاقة الإلكترونات الحركية</button><button class="option-btn" onclick="selectOption(this)">تزيد عدد الإلكترونات المنبعثة</button><button class="option-btn" onclick="selectOption(this)">تغير تردد العتبة</button><button class="option-btn" onclick="selectOption(this)">لا تؤثر على الظاهرة</button></div>
+</div>
+<h3 class="sub-section-header">ثانياً: المسائل الحسابية والمقالية</h3>
+<div class="open-question">
+  <h4>س1: دالة الشغل لمعدن 2.5 eV. سقط عليه ضوء تردده 8 × 10¹⁴ Hz. احسب KE_max بوحدة eV.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">E = 3.31 eV | KE_max = 0.81 eV</div>
+</div>
+<div class="open-question">
+  <h4>س2: احسب طول موجة دي برولي لبروتون بسرعة 2 × 10⁷ m/s. (m_p = 1.67 × 10⁻²⁷ kg)</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">λ ≈ 1.98 × 10⁻¹⁴ m</div>
+</div>
+<div class="open-question">
+  <h4>س3: إلكترون في ذرة هيدروجين ينتقل من n = 4 إلى n = 1. احسب طاقة الفوتون المنبعث وحدد السلسلة الطيفية.</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">E = 12.75 eV | سلسلة لايمان</div>
+</div>
+<div class="open-question">
+  <h4>س4: ما المقصود بظاهرة التأثير الكهروضوئي؟ وما هو تردد العتبة؟</h4>
+  <div class="answer-lines"></div>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">👁️ أظهر الإجابة</button>
+  <div class="answer-box" style="display:none">التأثير الكهروضوئي هو انبعاث إلكترونات من سطح معدن عند سقوط ضوء مناسب عليه. تردد العتبة هو أقل تردد للضوء الساقط يلزم لتحرير إلكترون من سطح المعدن.</div>
+</div>
+</div><div style="text-align: center; margin-top: 40px;"><button class="mark-done-btn ripple-btn" data-unit="unit6">✅ أتممت دراسة الوحدة</button></div></div>
+<!-- Flashcards Tab -->
+<div id="flashcards" class="tab-pane">
+<div class="card">
+<h2>🃏 بطاقات القوانين التفاعلية</h2>
+<p style="margin-bottom: 20px; color: var(--text-muted);">انقر على البطاقة لتقليبها (أو مرر الماوس فوقها) لمعرفة تفاصيل القانون.</p>
+<div class="flashcards-grid">
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">⚡</div>
+                    <h3>قانون كولوم</h3>
+                    <p>الوحدة 3: الكهرباء الساكنة</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">F = k|q₁q₂| / r²</div>
+                    <p>k = 9×10⁹ N·m²/C²</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">⚡</div>
+                    <h3>شدة المجال الكهربائي</h3>
+                    <p>الوحدة 3: الكهرباء الساكنة</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">E = F / q</div>
+                    <p>E: N/C ، F: N ، q: C</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">⚡</div>
+                    <h3>الجهد الكهربائي</h3>
+                    <p>الوحدة 3: الكهرباء الساكنة</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">V = W / q</div>
+                    <p>V: فولت ، W: جول</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">⚡</div>
+                    <h3>سعة المواسع</h3>
+                    <p>الوحدة 3: الكهرباء الساكنة</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">C = Q / V</div>
+                    <p>C: فاراد ، Q: كولوم</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">⚡</div>
+                    <h3>الطاقة المخزنة</h3>
+                    <p>الوحدة 3: الكهرباء الساكنة</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">U = ½CV²</div>
+                    <p>طاقة المواسع (جول)</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">💧</div>
+                    <h3>الكثافة</h3>
+                    <p>الوحدة 4: الموائع</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">ρ = m / V</div>
+                    <p>kg/m³</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">💧</div>
+                    <h3>ضغط السائل</h3>
+                    <p>الوحدة 4: الموائع</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">P = P₀ + ρgh</div>
+                    <p>الضغط الكلي عند عمق h</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">💧</div>
+                    <h3>قوة الطفو</h3>
+                    <p>الوحدة 4: الموائع</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">F_b = ρ V g</div>
+                    <p>قاعدة أرخميدس</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">💧</div>
+                    <h3>معادلة الاستمرارية</h3>
+                    <p>الوحدة 4: ديناميكا الموائع</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">A₁v₁ = A₂v₂</div>
+                    <p>تدفق الموائع</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">💧</div>
+                    <h3>معادلة برنولي</h3>
+                    <p>الوحدة 4: ديناميكا الموائع</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">P + ½ρv² + ρgh = ثابت</div>
+                    <p>حفظ الطاقة في المائع</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">💧</div>
+                    <h3>الغاز المثالي</h3>
+                    <p>الوحدة 4: الغازات</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">PV = nRT</div>
+                    <p>R = 8.314 J/(mol·K)</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">🔥</div>
+                    <h3>القانون الأول للديناميكا</h3>
+                    <p>الوحدة 5: الديناميكا الحرارية</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">ΔU = Q - W</div>
+                    <p>حفظ الطاقة</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">🔥</div>
+                    <h3>الطاقة الداخلية</h3>
+                    <p>الوحدة 5: الديناميكا الحرارية</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">U = (3/2)nRT</div>
+                    <p>لغاز أحادي الذرة</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">🔥</div>
+                    <h3>الشغل</h3>
+                    <p>الوحدة 5: الديناميكا الحرارية</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">W = PΔV</div>
+                    <p>العملية الإيزوبارية</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">🔥</div>
+                    <h3>كفاءة الآلة الحرارية</h3>
+                    <p>الوحدة 5: الآلات الحرارية</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">η = W / Q_H</div>
+                    <p>الشغل / الحرارة الممتصة</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">🔥</div>
+                    <h3>كفاءة كارنو</h3>
+                    <p>الوحدة 5: الآلات الحرارية</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">η_max = 1 - (T_C / T_H)</div>
+                    <p>الكفاءة القصوى</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">⚛️</div>
+                    <h3>طاقة الفوتون</h3>
+                    <p>الوحدة 6: ميكانيكا الكم</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">E = hf</div>
+                    <p>h = 6.626×10⁻³⁴ J·s</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">⚛️</div>
+                    <h3>معادلة أينشتاين للضوء</h3>
+                    <p>الوحدة 6: ميكانيكا الكم</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">KE_max = hf - W</div>
+                    <p>التأثير الكهروضوئي</p>
+                </div>
+            </div>
+        </div>
+<div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <div class="icon">⚛️</div>
+                    <h3>طول موجة دي برولي</h3>
+                    <p>الوحدة 6: ميكانيكا الكم</p>
+                </div>
+                <div class="flashcard-back">
+                    <div class="formula">λ = h / p</div>
+                    <p>p: الزخم (mv)</p>
+                </div>
+            </div>
+        </div>
+</div></div></div>
+<!-- Library Tab -->
+<div id="library" class="tab-pane">
+<div class="card purple">
+<h2>📚 المكتبة والمذكرات الشاملة</h2>
+<p style="margin-bottom: 20px; color: var(--text-muted); font-size: 1.1rem;">يمكنك تصفح أو تحميل المذكرات، الملخصات، ونماذج الاختبارات الأصلية بصيغة PDF لضمان مراجعة جميع التفاصيل والرسومات المعقدة.</p>
+<div class="options-grid" style="grid-template-columns: 1fr;">
+
+            <div class="mcq-question" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <h4 style="margin:0; font-size: 1.4rem; color: var(--primary);">📄 (شرح شامل فيزياء</h4>
+                    <p style="margin: 5px 0 0 0; color: var(--text-muted);">ملف PDF جاهز للطباعة والقراءة</p>
+                </div>
+                <div style="display:flex; gap: 10px;">
+                    <a href="resources/(شرح شامل فيزياء.pdf" target="_blank" style="text-decoration:none; background:var(--secondary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">👁️ عرض</a>
+                    <a href="resources/(شرح شامل فيزياء.pdf" download style="text-decoration:none; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">⬇️ تحميل</a>
+                </div>
+            </div>
+            
+
+            <div class="mcq-question" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <h4 style="margin:0; font-size: 1.4rem; color: var(--primary);">📄 إجابة اختبارات شاملة زويل 2023-2022 محدثة طبقا  للمواصفات</h4>
+                    <p style="margin: 5px 0 0 0; color: var(--text-muted);">ملف PDF جاهز للطباعة والقراءة</p>
+                </div>
+                <div style="display:flex; gap: 10px;">
+                    <a href="resources/إجابة اختبارات شاملة زويل 2023-2022 محدثة طبقا Image للمواصفات.pdf" target="_blank" style="text-decoration:none; background:var(--secondary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">👁️ عرض</a>
+                    <a href="resources/إجابة اختبارات شاملة زويل 2023-2022 محدثة طبقا Image للمواصفات.pdf" download style="text-decoration:none; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">⬇️ تحميل</a>
+                </div>
+            </div>
+            
+
+            <div class="mcq-question" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <h4 style="margin:0; font-size: 1.4rem; color: var(--primary);">📄 المراجعة النهائية للفيزياء ابو مازن 1</h4>
+                    <p style="margin: 5px 0 0 0; color: var(--text-muted);">ملف PDF جاهز للطباعة والقراءة</p>
+                </div>
+                <div style="display:flex; gap: 10px;">
+                    <a href="resources/المراجعة_النهائية_للفيزياء_ابو_مازن_1.pdf" target="_blank" style="text-decoration:none; background:var(--secondary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">👁️ عرض</a>
+                    <a href="resources/المراجعة_النهائية_للفيزياء_ابو_مازن_1.pdf" download style="text-decoration:none; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">⬇️ تحميل</a>
+                </div>
+            </div>
+            
+
+            <div class="mcq-question" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <h4 style="margin:0; font-size: 1.4rem; color: var(--primary);">📄 تجميع اختبارات للصف الثاني عشر</h4>
+                    <p style="margin: 5px 0 0 0; color: var(--text-muted);">ملف PDF جاهز للطباعة والقراءة</p>
+                </div>
+                <div style="display:flex; gap: 10px;">
+                    <a href="resources/تجميع اختبارات للصف الثاني عشر.pdf" target="_blank" style="text-decoration:none; background:var(--secondary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">👁️ عرض</a>
+                    <a href="resources/تجميع اختبارات للصف الثاني عشر.pdf" download style="text-decoration:none; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">⬇️ تحميل</a>
+                </div>
+            </div>
+            
+
+            <div class="mcq-question" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <h4 style="margin:0; font-size: 1.4rem; color: var(--primary);">📄 قوانين الوحدة الثالثة</h4>
+                    <p style="margin: 5px 0 0 0; color: var(--text-muted);">ملف PDF جاهز للطباعة والقراءة</p>
+                </div>
+                <div style="display:flex; gap: 10px;">
+                    <a href="resources/قوانين الوحدة الثالثة.pdf" target="_blank" style="text-decoration:none; background:var(--secondary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">👁️ عرض</a>
+                    <a href="resources/قوانين الوحدة الثالثة.pdf" download style="text-decoration:none; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">⬇️ تحميل</a>
+                </div>
+            </div>
+            
+
+            <div class="mcq-question" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <h4 style="margin:0; font-size: 1.4rem; color: var(--primary);">📄 مذكرة فيزياء الصف 12 قطري   الفصل الدراسي الثاني</h4>
+                    <p style="margin: 5px 0 0 0; color: var(--text-muted);">ملف PDF جاهز للطباعة والقراءة</p>
+                </div>
+                <div style="display:flex; gap: 10px;">
+                    <a href="resources/مذكرة فيزياء الصف 12 قطري _ الفصل الدراسي الثاني.pdf" target="_blank" style="text-decoration:none; background:var(--secondary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">👁️ عرض</a>
+                    <a href="resources/مذكرة فيزياء الصف 12 قطري _ الفصل الدراسي الثاني.pdf" download style="text-decoration:none; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">⬇️ تحميل</a>
+                </div>
+            </div>
+            
+
+            <div class="mcq-question" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <h4 style="margin:0; font-size: 1.4rem; color: var(--primary);">📄 ملخصات الغزالي   فيزياء ١٢ درس (١)</h4>
+                    <p style="margin: 5px 0 0 0; color: var(--text-muted);">ملف PDF جاهز للطباعة والقراءة</p>
+                </div>
+                <div style="display:flex; gap: 10px;">
+                    <a href="resources/ملخصات الغزالي _ فيزياء ١٢ درس (١).pdf" target="_blank" style="text-decoration:none; background:var(--secondary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">👁️ عرض</a>
+                    <a href="resources/ملخصات الغزالي _ فيزياء ١٢ درس (١).pdf" download style="text-decoration:none; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">⬇️ تحميل</a>
+                </div>
+            </div>
+            
+
+            <div class="mcq-question" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <h4 style="margin:0; font-size: 1.4rem; color: var(--primary);">📄 نموذج إجابة ملزمة ليلة الأختبار</h4>
+                    <p style="margin: 5px 0 0 0; color: var(--text-muted);">ملف PDF جاهز للطباعة والقراءة</p>
+                </div>
+                <div style="display:flex; gap: 10px;">
+                    <a href="resources/نموذج إجابة ملزمة ليلة الأختبار Image.pdf" target="_blank" style="text-decoration:none; background:var(--secondary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">👁️ عرض</a>
+                    <a href="resources/نموذج إجابة ملزمة ليلة الأختبار Image.pdf" download style="text-decoration:none; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:bold; transition: 0.3s; display:inline-block;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">⬇️ تحميل</a>
+                </div>
+            </div>
+            
+</div></div></div>
+<!-- Exam Night Tab -->
+<div id="exam_night" class="tab-pane">
+<div class="card" style="border-right: 6px solid #ef4444; background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), transparent);">
+<h2 style="color: #ef4444;">🚨 مراجعة ليلة الامتحان (الأسئلة المتوقعة)</h2>
+<p style="font-size: 1.1rem; margin-bottom: 20px;">هذا القسم مخصص للمراجعة السريعة قبل الاختبار. يحتوي على تجميع لأهم الأسئلة المتكررة في الاختبارات الشاملة (زويل، الغزالي، أبو مازن) بالإضافة إلى رابط لتحميل نموذج الإجابة الخاص بملزمة ليلة الاختبار.</p>
+<div style="text-align: center; margin-bottom: 30px;">
+<a href="resources/نموذج إجابة ملزمة ليلة الأختبار Image.pdf" target="_blank" style="display:inline-block; background: #ef4444; color: white; padding: 15px 30px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; text-decoration: none; box-shadow: 0 4px 15px rgba(239,68,68,0.4); transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">⬇️ تحميل إجابة ملزمة ليلة الاختبار</a>
+</div>
+<h4 class="section-title">⭐ 🔥 الأسئلة الذهبية المتوقعة</h4>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (1)</h4>
+  </div>
+  <p class="example-q">من الوحدة 3: شحنتان نقطيتان 2μC و -5μC المسافة بينهما 10cm. احسب القوة المتبادلة وهل هي تجاذب أم تنافر؟</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 F = k |q₁q₂| / r²</div><div class='step-item'>🔹 F = (9×10⁹ × 2×10⁻⁶ × 5×10⁻⁶) / (0.1)²</div><div class='step-item'>🔹 F = (9×10⁹ × 10×10⁻¹²) / 0.01</div><div class='step-item'>🔹 F = 90×10⁻³ / 0.01 = 9 N</div></div>
+    <div class="final-answer">✅ F = 9 N (قوة تجاذب)</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (2)</h4>
+  </div>
+  <p class="example-q">من الوحدة 4: جسم وزنه في الهواء 50N ووزنه وهو مغمور كلياً في الماء 30N. احسب قوة الطفو وحجم الجسم.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 قوة الطفو = الوزن الحقيقي - الوزن الظاهري</div><div class='step-item'>🔹 F_b = 50 - 30 = 20 N</div><div class='step-item'>🔹 حجم الجسم من قانون الطفو: F_b = ρ V g</div><div class='step-item'>🔹 20 = 1000 × V × 9.8</div><div class='step-item'>🔹 V = 20 / 9800</div></div>
+    <div class="final-answer">✅ F_b = 20 N | V = 2.04 × 10⁻³ m³</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (3)</h4>
+  </div>
+  <p class="example-q">من الوحدة 5: آلة كارنو تعمل بين درجتي حرارة 127°C و 327°C وتأخذ حرارة مقدارها 1000J. احسب أقصى كفاءة لها والشغل الذي تبذله.</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 T_H = 327 + 273 = 600 K</div><div class='step-item'>🔹 T_C = 127 + 273 = 400 K</div><div class='step-item'>🔹 η = 1 - (T_C/T_H) = 1 - (400/600) = 1 - 0.667 = 33.3%</div><div class='step-item'>🔹 الشغل: η = W / Q_H</div><div class='step-item'>🔹 W = η × Q_H = 0.333 × 1000 = 333 J</div></div>
+    <div class="final-answer">✅ η = 33.3% | W = 333 J</div>
+  </div>
+</div>
+<div class="example-card">
+  <div class="example-header">
+    <span class="example-icon">📝</span>
+    <h4 class="example-num">مثال (4)</h4>
+  </div>
+  <p class="example-q">من الوحدة 6: سقط ضوء طوله الموجي 300nm على سطح معدن دالة الشغل له 2.2eV. احسب أقصى طاقة حركية للإلكترونات المنبعثة (بوحدة eV).</p>
+  <button class="show-ans-btn" onclick="toggleAnswer(this)">💡 عرض الحل التفصيلي</button>
+  <div class="answer-box example-solution" style="display:none">
+    <div class="steps"><div class='step-item'>🔹 E = hc/λ = (1240 eV.nm) / 300 nm = 4.133 eV</div><div class='step-item'>🔹 من معادلة أينشتاين الكهروضوئية: K_max = E - Φ</div><div class='step-item'>🔹 K_max = 4.133 - 2.2</div></div>
+    <div class="final-answer">✅ K_max = 1.933 eV</div>
+  </div>
+</div>
+</div></div>
+<!-- Mock Exam Tab -->
+<div id="mock_exam" class="tab-pane">
+<div class="card" style="border-right: 6px solid #10b981;">
+<h2 style="color: #10b981;">📝 اختبر نفسك (امتحان شامل)</h2>
+<p>اختبر معلوماتك في المنهج بالكامل. أجب عن جميع الأسئلة ثم اضغط على زر "تسليم الإجابات" لمعرفة نتيجتك.</p>
+<div id="mockExamContainer">
+<div class="mcq-question"><h4>1- سقط ضوء طوله الموجي 300nm على معدن دالة الشغل له 2.2eV. ما أقصى طاقة حركية للإلكترونات؟</h4><div class="options-grid">
+    <button class="option-btn" onclick="selectOption(this)" data-correct="true">1.93 eV</button>
+    <button class="option-btn" onclick="selectOption(this)">4.13 eV</button>
+    <button class="option-btn" onclick="selectOption(this)">2.2 eV</button>
+    <button class="option-btn" onclick="selectOption(this)">6.33 eV</button></div></div>
+<div class="mcq-question"><h4>2- آلة كارنو تعمل بين 127°C و 327°C. ما كفاءتها القصوى؟</h4><div class="options-grid">
+    <button class="option-btn" onclick="selectOption(this)">20%</button>
+    <button class="option-btn" onclick="selectOption(this)" data-correct="true">33.3%</button>
+    <button class="option-btn" onclick="selectOption(this)">66.7%</button>
+    <button class="option-btn" onclick="selectOption(this)">100%</button></div></div>
+<div class="mcq-question"><h4>3- جسم وزنه الحقيقي 50N ووزنه في الماء 30N. ما هي قوة الطفو المؤثرة عليه؟</h4><div class="options-grid">
+    <button class="option-btn" onclick="selectOption(this)">80 N</button>
+    <button class="option-btn" onclick="selectOption(this)" data-correct="true">20 N</button>
+    <button class="option-btn" onclick="selectOption(this)">50 N</button>
+    <button class="option-btn" onclick="selectOption(this)">30 N</button></div></div>
+<div class="mcq-question"><h4>4- شحنتان 2μC و -5μC المسافة بينهما 10cm. ما مقدار القوة المتبادلة بينهما؟</h4><div class="options-grid">
+    <button class="option-btn" onclick="selectOption(this)" data-correct="true">9 N</button>
+    <button class="option-btn" onclick="selectOption(this)">90 N</button>
+    <button class="option-btn" onclick="selectOption(this)">0.9 N</button>
+    <button class="option-btn" onclick="selectOption(this)">45 N</button></div></div>
+<div style="text-align: center; margin-top: 30px;">
+<button id="submitMockExamBtn" class="ripple-btn" style="background: #10b981; color: white; padding: 15px 40px; font-size: 1.3rem; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 15px rgba(16,185,129,0.4); font-weight: bold; transition: 0.3s;">تسليم الإجابات 🏁</button>
+<div id="mockExamResult" style="margin-top: 20px; font-size: 1.5rem; font-weight: bold; display: none;"></div>
+</div>
+</div></div></div>
+<!-- Tips Tab -->
+        <div id="tips" class="tab-pane">
+            <div class="card">
+                <h2>🎯 نصائح الاختبار</h2>
+                <ul class="concept-list">
+                    <li>🔸 راجع جميع القوانين وتأكد من فهمك لرموزها. استخدم بطاقات القوانين للمراجعة السريعة.</li>
+                    <li>🔸 حول جميع الوحدات إلى النظام الدولي (SI) قبل التعويض (مثال: cm إلى m).</li>
+                    <li>🔸 في قوانين الغازات والديناميكا الحرارية، <strong>يجب</strong> استخدام درجة الحرارة بالكلفن (K = °C + 273).</li>
+                    <li>🔸 انتبه للإشارات: الشحنات الموجبة والسالبة، والشغل المبذول بواسطة الغاز (موجب) أو عليه (سالب).</li>
+                    <li>🔸 اقرأ الأسئلة بعناية وتأكد من المطلوب قبل البدء في الحل.</li>
+                    <li>🔸 استخدم زر التوقيت (الموجود في أعلى الصفحة) عند حل بنك الأسئلة لتدريب نفسك على سرعة الإنجاز.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+<script>
+function toggleAnswer(btn) {
+    const box = btn.nextElementSibling;
+    if (!box) return;
+    if (box.style.display === 'block') {
+        box.style.display = 'none';
+        btn.textContent = '👁️ أظهر الإجابة';
+    } else {
+        box.style.display = 'block';
+        btn.textContent = '🙈 أخفِ الإجابة';
+    }
+}
+function selectOption(btn) {
+    // Toggle within its group
+    btn.classList.toggle('selected');
+}
+
+// Timer logic
+const timers = {};
+document.addEventListener('click', function(e) {
+    const t = e.target;
+    const tid = t.dataset.timer;
+    if (!tid) return;
+    if (t.classList.contains('start-btn')) {
+        if (!timers[tid]) {
+            timers[tid] = { sec: 0, interval: setInterval(() => {
+                timers[tid].sec++;
+                const m = String(Math.floor(timers[tid].sec/60)).padStart(2,'0');
+                const s = String(timers[tid].sec%60).padStart(2,'0');
+                const el = document.getElementById(tid);
+                if(el) el.textContent = m+':'+s;
+            }, 1000)};
+        }
+    } else if (t.classList.contains('pause-btn')) {
+        if (timers[tid]) { clearInterval(timers[tid].interval); delete timers[tid]; }
+    } else if (t.classList.contains('reset-btn')) {
+        if (timers[tid]) { clearInterval(timers[tid].interval); delete timers[tid]; }
+        const el = document.getElementById(tid);
+        if(el) el.textContent = '00:00';
+    }
+});
+</script>
+<!-- Back to Top Button -->
+<button id="backToTopBtn" class="ripple-btn" title="العودة للأعلى" style="display: none; position: fixed; bottom: 30px; left: 30px; z-index: 9999; background: var(--primary); color: white; border: none; border-radius: 50%; width: 55px; height: 55px; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 15px rgba(37,99,235,0.4); transition: all 0.3s ease;">⬆️</button>
+</body>
+</html>
